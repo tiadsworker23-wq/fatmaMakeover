@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>fatma_Makeover | Professional Makeup Artist</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff5f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(90deg,#ff4d88,#ff99c8);
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.menu-btn{
+    position:absolute;
+    left:20px;
+    top:20px;
+    font-size:26px;
+    cursor:pointer;
+}
+
+.sidebar{
+    position:fixed;
+    left:-250px;
+    top:0;
+    width:250px;
+    height:100%;
+    background:#ff4d88;
+    padding-top:60px;
+    transition:0.4s;
+    z-index:2000;
+}
+
+.sidebar a{
+    display:block;
+    padding:15px 20px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.sidebar a:hover{
+    background:#ff1f6b;
+}
+
+.sidebar.active{
+    left:0;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:32px;
+    color:#ff4d88;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:16px;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    font-size:26px;
+    color:#ff4d88;
+    margin-bottom:30px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:#ff4d88;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#ff1f6b;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ff4d88;
+    color:white;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<span class="menu-btn" onclick="toggleMenu()">☰</span>
+fatma_Makeover
+</header>
+
+<div class="sidebar" id="sidebar">
+<a href="#home">Home</a>
+<a href="#about">About Me</a>
+<a href="#art">My Art</a>
+<a href="#contact">Contact Me</a>
+</div>
+
+<section class="hero" id="home">
+<h1>Professional Makeup Artist</h1>
+<p>Creating timeless beauty for brides & special occasions.</p>
+<a href="tel:7003260124" class="btn">Call Now</a>
+<a href="https://wa.me/917003260124" class="btn">WhatsApp</a>
+<a href="https://www.instagram.com/fatma_makeovers" class="btn" target="_blank">Instagram</a>
+</section>
+
+<section class="section" id="about">
+<h2>About Me</h2>
+<p>
+I am a certified professional makeup artist passionate about enhancing natural beauty and creating elegant bridal transformations.
+I have completed my professional diploma under renowned makeup artist Simran Perveen.
+My goal is to deliver flawless, camera-ready looks tailored uniquely to every client.
+</p>
+</section>
+
+<section class="section" id="art">
+<h2>My Art</h2>
+
+<div class="gallery">
+
+<!-- Replace image1.jpg etc with your uploaded image names -->
+
+<img src="image1.jpg">
+<img src="image2.jpg">
+<img src="image3.jpg">
+<img src="image4.jpg">
+<img src="image5.jpg">
+<img src="image6.jpg">
+<img src="image7.jpg">
+<img src="image8.jpg">
+<img src="image9.jpg">
+<img src="image10.jpg">
+<img src="image11.jpg">
+<img src="image12.jpg">
+<img src="image13.jpg">
+<img src="image14.jpg">
+<img src="image15.jpg">
+<img src="image16.jpg">
+<img src="image17.jpg">
+<img src="image18.jpg">
+
+</div>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact Me</h2>
+<p>Phone & WhatsApp: 7003260124</p>
+<p>Instagram: @fatma_makeovers</p>
+<a href="tel:7003260124" class="btn">Call</a>
+<a href="https://wa.me/917003260124" class="btn">WhatsApp</a>
+</section>
+
+<footer>
+© 2026 fatma_Makeover. All Rights Reserved.
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
